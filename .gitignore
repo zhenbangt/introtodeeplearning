@@ -1,6 +1,6 @@
 .DS_Store
 .ipynb_checkpoints
-
+lab1/solutions/training_checkpoints/
 
 *.pyc
 *.h5

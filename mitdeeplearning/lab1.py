@@ -4,6 +4,7 @@ import subprocess
 import urllib
 import numpy as np
 import tensorflow as tf
+import numpy as np
 
 from IPython.display import Audio
 
@@ -23,7 +24,7 @@ def extract_song_snippet(text):
     print("Found {} songs in text".format(len(songs)))
     return songs
 
-def save_song_to_abc(song, filename="tmp"):
+def save_song_to_abc(song, filename="tmp"+str(np.random.randint(100000))):
     save_name = "{}.abc".format(filename)
     with open(save_name, "w") as f:
         f.write(song)
